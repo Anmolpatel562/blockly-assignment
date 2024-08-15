@@ -9,7 +9,7 @@ const MAPBOX_ACCESS_TOKEN =
   "pk.eyJ1IjoiYW5tb2xwYXRlbDU2MiIsImEiOiJjbHp0dmhkY3IxeXhuMmlzM3Nxa2xkZXl5In0.gzMz6e7phFHtB-OVbxD-zQ";
 
 const vehicleIcon = new L.Icon({
-  iconUrl: car,
+  iconUrl: "https://static.vecteezy.com/system/resources/previews/009/760/728/original/map-pointer-with-car-icon-illustration-vector.jpg",
   iconSize: [50, 41],
   iconAnchor: [12, 41],
   popupAnchor: [1, -34],
