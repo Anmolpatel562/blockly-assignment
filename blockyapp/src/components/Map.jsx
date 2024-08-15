@@ -21,7 +21,6 @@ const Map = () => {
   const [routeCoordinates, setRouteCoordinates] = useState([]);
   const [destination, setDestination] = useState("");
 
-  // Watch user's current location in real-time
   useEffect(() => {
     const watchId = navigator.geolocation.watchPosition(
       (position) => {
@@ -113,7 +112,6 @@ const Map = () => {
             zoomOffset={-1}
             attribution='&copy; <a href="https://www.mapbox.com/">Mapbox</a> contributors'
           />
-          {/* Marker for the current location (User's real-time location) */}
           <Marker position={currentPosition} icon={vehicleIcon} />
           {routeCoordinates.length > 0 && (
             <Polyline positions={routeCoordinates} color="green" />
